@@ -9,14 +9,29 @@
     </h:head>
 
     <h:body>
-        <h:form>
-            <h:commandButton value="Clock" action="#{pushBean.clockAction()}">
-                <f:ajax />
-            </h:commandButton>
-        </h:form>
 
         <hr/>
-        <div id="clockId"></div>
+
+        <h1>App Jsf 2.3</h1>
+
+        <h:form>
+
+            <h:commandButton value="Clock" action="#{indexController.mostrarMensagem}">
+                <f:ajax />
+            </h:commandButton>
+
+            <br/>
+
+            <h:outputLabel value="#{indexController.mostrarMensagem}" />
+
+            <br/>
+
+            <h:outputLabel value="#{indexController.contador}" />
+
+
+        </h:form>
+
+
 
     </h:body>
 
