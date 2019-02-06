@@ -2,7 +2,9 @@ package controller;
 
 import javax.annotation.PostConstruct;
 import javax.enterprise.context.SessionScoped;
+import javax.inject.Inject;
 import javax.inject.Named;
+import javax.servlet.ServletContext;
 import java.io.Serializable;
 
 @Named
@@ -10,18 +12,27 @@ import java.io.Serializable;
 public class IndexController implements Serializable {
 
 
+    @Inject
+    private ServletContext servletContext;
+
     private String mensagem;
 
 
     private Integer contador;
 
+
+    private String servidor;
+
+
     @PostConstruct
     private void init() {
+        servidor = servletContext.getServerInfo();
         contador = 0;
     }
 
 
     public void mostrarMensagem() {
+        System.out.println(servidor);
         mensagem = "Cavera !!!";
         contador++;
     }
@@ -40,6 +51,14 @@ public class IndexController implements Serializable {
 
     public void setContador(Integer contador) {
         this.contador = contador;
+    }
+
+    public String getServidor() {
+        return servidor;
+    }
+
+    public void setServidor(String servidor) {
+        this.servidor = servidor;
     }
 
 }

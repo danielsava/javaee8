@@ -9,7 +9,7 @@
 
     <artifactId>java-web</artifactId>
 
-    <version>1.0</version>
+    <version>0.1</version>
 
     <packaging>war</packaging>
 
@@ -77,18 +77,36 @@
 
         -->
 
+        <!--  JSF e CDI: API-->
         <dependency>
             <groupId>org.apache.myfaces.core</groupId>
             <artifactId>myfaces-api</artifactId>
             <version>2.3.3</version>
-            <scope>provided</scope> <!-- provided / compile (default)-->
+            <scope>compile</scope> <!-- provided / compile (default)-->
         </dependency>
 
         <dependency>
             <groupId>javax.enterprise</groupId>
             <artifactId>cdi-api</artifactId>
             <version>2.0</version>
-            <scope>provided</scope>
+            <scope>compile</scope>
+        </dependency>
+
+        <!--  JSF e CDI: Implementações-->
+
+        <dependency>
+            <groupId>org.apache.myfaces.core</groupId>
+            <artifactId>myfaces-impl</artifactId>
+            <version>2.3.3</version>
+            <scope>compile</scope>
+        </dependency>
+
+
+        <dependency>
+            <groupId>org.jboss.weld.servlet</groupId>
+            <artifactId>weld-servlet-shaded</artifactId>
+            <version>3.0.5.Final</version>
+            <scope>compile</scope>
         </dependency>
 
     </dependencies>
