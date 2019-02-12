@@ -32,82 +32,35 @@
             <scope>provided</scope>
         </dependency>
 
-        <!--
-        <dependency>
-            <groupId>javax.faces</groupId>
-            <artifactId>javax.faces-api</artifactId>
-            <version>2.3</version>
-            <scope>provided</scope>
-        </dependency>
-
-        <dependency>
-            <groupId>org.glassfish</groupId>
-            <artifactId>javax.faces</artifactId>
-            <version>2.3.0</version>
-            <scope>provided</scope>
-        </dependency>
-
-        <dependency>
-            <groupId>org.jboss.weld</groupId>
-            <artifactId>weld-core</artifactId>
-            <version>2.4.8.Final</version>
-            <scope>compile</scope>
-        </dependency>
-
-        <dependency>
-            <groupId>org.jboss.weld</groupId>
-            <artifactId>weld-api</artifactId>
-            <version>2.4.Final</version>
-            <scope>compile</scope>
-        </dependency>
-
-        <dependency>
-            <groupId>org.jboss.weld.servlet</groupId>
-            <artifactId>weld-servlet</artifactId>
-            <version>2.4.8.Final</version>
-            <scope>compile</scope>
-        </dependency>
-
-       <dependency>
-            <groupId>org.apache.myfaces.core</groupId>
-            <artifactId>myfaces-impl</artifactId>
-            <version>2.3.3</version>
-            <scope>compile</scope>
-        </dependency>
-
-        -->
-
         <!--  JSF e CDI: API-->
         <dependency>
             <groupId>org.apache.myfaces.core</groupId>
             <artifactId>myfaces-api</artifactId>
             <version>2.3.3</version>
-            <scope>compile</scope> <!-- provided / compile (default)-->
+            <scope>provided</scope>
         </dependency>
 
         <dependency>
             <groupId>javax.enterprise</groupId>
             <artifactId>cdi-api</artifactId>
             <version>2.0</version>
-            <scope>compile</scope>
+            <scope>provided</scope>
         </dependency>
 
-        <!--  JSF e CDI: Implementações-->
-
+        <!--  JSF e CDI: Implementações
         <dependency>
             <groupId>org.apache.myfaces.core</groupId>
             <artifactId>myfaces-impl</artifactId>
             <version>2.3.3</version>
             <scope>compile</scope>
         </dependency>
-
-
         <dependency>
             <groupId>org.jboss.weld.servlet</groupId>
             <artifactId>weld-servlet-shaded</artifactId>
             <version>3.0.5.Final</version>
             <scope>compile</scope>
         </dependency>
+        -->
 
     </dependencies>
 
