@@ -2,7 +2,7 @@ package controller;
 
 import javax.faces.annotation.FacesConfig;
 
-/** Habilita CDI dentro dos Beans do JSF */
+/**  It is only for JSF 2.3 */
 
 @FacesConfig
 public class JsfConfig {
