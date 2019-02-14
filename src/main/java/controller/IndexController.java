@@ -2,8 +2,8 @@ package controller;
 
 import javax.annotation.PostConstruct;
 import javax.enterprise.context.SessionScoped;
-import javax.faces.context.RequestCookieMap;
-import javax.faces.context.SessionMap;
+import javax.faces.annotation.RequestCookieMap;
+import javax.faces.annotation.SessionMap;
 import javax.inject.Inject;
 import javax.inject.Named;
 import javax.servlet.ServletContext;
@@ -16,12 +16,12 @@ public class IndexController implements Serializable {
 
 
     @Inject
-    @RequestCookieMap
+    @RequestCookieMap //@RequestCookieMap
     private Map<String, Object> cookies;
 
 
     @Inject
-    @SessionMap
+    @SessionMap  //@SessionMap
     private Map<String, Object> sessionMap;
 
 

@@ -1,0 +1,43 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+                xmlns:h="http://java.sun.com/jsf/html"
+                xmlns:f="http://xmlns.jcp.org/jsf/core"
+                xmlns:ui="http://java.sun.com/jsf/facelets"
+                template="/WEB-INF/template.xhtml">
+
+    <ui:define name="content">
+
+
+        <h:form id="form">
+
+            Cavera Facelets !!!
+
+            <br/><br/>
+
+            Suporte LocalDateTime <br/>
+
+            <h:outputText value="#{caveraController.dataHora}">
+                <f:convertDateTime type="localDate" pattern="dd/MM/yyyy"/>
+            </h:outputText>
+
+            <br/><br/>
+
+            DataTable <br/>
+            <h:dataTable value="#{caveraController.soldados}" var="s">
+                <h:column value="#{s.nome}"/>
+                <h:column value="#{s.identificacao}"/>
+                <h:column value="#{s.dataHora}"/>
+            </h:dataTable>
+
+            <br/><br/>
+
+            Repeat <br/>
+
+            <ui:repeat value="#{caveraController.identificacoes}" var="i">
+                #{i} <br/>
+            </ui:repeat>
+
+        </h:form>
+
+    </ui:define>
+
+</ui:composition>

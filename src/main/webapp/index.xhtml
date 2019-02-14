@@ -2,7 +2,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:h="http://xmlns.jcp.org/jsf/html"
-      xmlns:f="http://xmlns.jcp.org/jsf/core">
+>
 
     <h:head>
         <title></title>
@@ -35,6 +35,31 @@
             <br/>
 
             <h:outputLabel value="#{indexController.servidor}" />
+
+            <br/>
+            <br/>
+            <br/>
+
+            Button : Navegação Implícita <br/>
+
+            <h:commandButton value="Cavera" label="Cavera" action="pagCavera?faces-redirect=true"/>
+            <h:commandButton value="DataHora" label="DataHora" action="pagDataHora"/>
+
+            <br/>
+            <br/>
+            <br/>
+
+            Link : Navegação Implícita <br/>
+
+
+            <h:commandLink value = "DataHora" action="pagDataHora" /><br/>
+            <h:commandLink value = "Cavera" action="pagCavera?faces-redirect=true" /><br/>
+
+            <br/>
+            <br/>
+            <br/>
+
+             Navegação Explícita : faces-config.xml <br/>
 
         </h:form>
 
