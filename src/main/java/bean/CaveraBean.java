@@ -1,9 +1,5 @@
-package Bean;
+package bean;
 
-import org.primefaces.PrimeFaces;
-
-import javax.faces.application.FacesMessage;
-import javax.faces.context.FacesContext;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;

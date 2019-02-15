@@ -1,6 +1,6 @@
 package jsf.validator;
 
-import Bean.CaveraBean;
+import bean.CaveraBean;
 
 import javax.faces.application.FacesMessage;
 import javax.faces.component.UIComponent;

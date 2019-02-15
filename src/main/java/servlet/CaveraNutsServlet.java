@@ -36,11 +36,11 @@ public class CaveraNutsServlet extends HttpServlet {
         resp.getWriter()
                 .append("<html><body>")
                 .append("<br/><br/>")
-                .append("Application Bean : ").append(String.valueOf(ApplicationBean.contador))
+                .append("Application bean : ").append(String.valueOf(ApplicationBean.contador))
                 .append("<br/><br/>")
-                .append("Session Bean : ").append(String.valueOf(SessionBean.contador))
+                .append("Session bean : ").append(String.valueOf(SessionBean.contador))
                 .append("<br/><br/>")
-                .append("Request Bean : ").append(String.valueOf(RequestBean.contador))
+                .append("Request bean : ").append(String.valueOf(RequestBean.contador))
                 .append("<br/>")
                 .append("</body></html>");
 

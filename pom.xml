@@ -40,7 +40,7 @@
             <version>6.2</version>
         </dependency>
 
-        <!--  JSF e CDI: API-->
+        <!--  JSF -->
         <dependency>
             <groupId>org.apache.myfaces.core</groupId>
             <artifactId>myfaces-api</artifactId>
@@ -48,10 +48,44 @@
             <scope>provided</scope>
         </dependency>
 
+        <!--  CDI-->
         <dependency>
             <groupId>javax.enterprise</groupId>
             <artifactId>cdi-api</artifactId>
             <version>2.0</version>
+            <scope>provided</scope>
+        </dependency>
+
+        <!-- Hibernate Core -->
+        <dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-core</artifactId>
+            <version>5.3.6.Final</version> <!-- 5.3.6.Final (server) -->
+            <scope>provided</scope>
+        </dependency>
+
+        <!-- Bean Validation 2.0 (EE 8)-->
+        <dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-validator</artifactId>
+            <version>6.0.13.Final</version>
+            <scope>provided</scope>
+        </dependency>
+
+        <!-- JPA
+        <dependency>
+            <groupId>javax.persistence</groupId>
+            <artifactId>javax.persistence-api</artifactId>
+            <version>2.2</version>
+            <scope>provided</scope>
+        </dependency>
+        -->
+
+        <!-- Transaction -->
+        <dependency>
+            <groupId>javax.transaction</groupId>
+            <artifactId>javax.transaction-api</artifactId>
+            <version>1.2</version>
             <scope>provided</scope>
         </dependency>
 

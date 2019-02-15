@@ -1,6 +1,6 @@
 package controller;
 
-import Bean.CaveraBean;
+import bean.CaveraBean;
 import org.primefaces.PrimeFaces;
 
 import javax.annotation.PostConstruct;

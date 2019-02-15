@@ -1,6 +1,6 @@
 package jsf.converter;
 
-import Bean.CaveraBean;
+import bean.CaveraBean;
 
 import javax.faces.component.UIComponent;
 import javax.faces.context.FacesContext;
