@@ -7,16 +7,36 @@
 
     <ui:define name="content">
 
+        <script type="text/javascript">
+            function handleLoginRequest(xhr, status, args) {
+                if(args.validationFailed || !args.loggedIn) {
+                    PF('dlg').jq.effect("shake", {times:5}, 100);
+                }
+                else {
+                    PF('dlg').hide();
+                    $('#loginLink').fadeOut();
+                }
+            }
+        </script>
+
 
         <h:form id="form">
 
-            <p:spinner />
+            <p:growl id="growl" sticky="true" showDetail="true" life="3000" />
 
-            <h3 style="margin-top:0">Basic</h3>
+            <h3 style="margin-top:0">LinkImage</h3>
+            <h:outputLink value="javascript:void(0)" onclick="PF('dlg').show();" title="login">
+                <p:graphicImage name="/demo/images/cavera.jpg" />
+            </h:outputLink>
+
+            <br/><br/><br/>
+
+
+            <h3 style="margin-top:0">AccordionPanel</h3>
             <p:accordionPanel>
-                <p:tab title="Godfather Part I">
+                <p:tab title="Audi">
                     <h:panelGrid columns="2" cellpadding="10">
-                        <p:graphicImage name="demo/images/audi.jpg" />
+                        <p:graphicImage library="demo" name="/images/audi.png" />
                         <h:outputText
                                 value="The story begins as Don Vito Corleone, the head of a New York Mafia family, oversees his daughter's wedding.
                     His beloved son Michael has just come home from the war, but does not intend to become part of his father's business.
@@ -24,22 +44,42 @@
                     but given to ruthless violence whenever anything stands against the good of the family." />
                     </h:panelGrid>
                 </p:tab>
-                <p:tab title="Godfather Part II">
+                <p:tab title="BMW">
                     <h:panelGrid columns="2" cellpadding="10">
-                        <p:graphicImage name="demo/images/bmw.jpg" />
+                        <p:graphicImage name="demo/images/bmw.png" />
                         <h:outputText value="Francis Ford Coppola's legendary continuation and sequel to his landmark 1972 film, The_Godfather, parallels the young Vito Corleone's rise with his son Michael's spiritual fall, deepening The_Godfather's depiction of the dark side of the American dream.
                 In the early 1900s, the child Vito flees his Sicilian village for America after the local Mafia kills his family. Vito struggles to make a living, legally or illegally, for his wife and growing brood in Little Italy,
                 killing the local Black Hand Fanucci after he demands his customary cut of the tyro's business. With Fanucci gone, Vito's communal stature grows." />
                     </h:panelGrid>
                 </p:tab>
-                <p:tab title="Godfather Part III">
+                <p:tab title="Jaguar">
                     <h:panelGrid columns="2" cellpadding="10">
-                        <p:graphicImage name="demo/images/jaguar.jpg" />
+                        <p:graphicImage name="demo/images/jaguar.png" />
                         <h:outputText value="After a break of more than 15 years, director Francis Ford Coppola and writer Mario Puzo returned to the well for this third and final story of the fictional Corleone crime family.
                     Two decades have passed, and crime kingpin Michael Corleone, now divorced from his wife Kay has nearly succeeded in keeping his promise that his family would one day be completely legitimate." />
                     </h:panelGrid>
                 </p:tab>
             </p:accordionPanel>
+
+
+            <br/>
+            <br/>
+            <br/>
+
+            <p:dialog header="Login" widgetVar="dlg" resizable="false" modal="true" closable="true">
+                <h:panelGrid columns="2" cellpadding="5">
+                    <h:outputLabel for="username" value="Username:" />
+                    <p:inputText id="username" label="username" value="#{caveraController.login}"/>
+
+                    <h:outputLabel for="password" value="Password:" />
+                    <p:password id="password" required="true" label="password" value="#{caveraController.senha}" />
+
+                    <f:facet name="footer">
+                        <p:commandButton value="Login" action="#{caveraController.login()}" oncomplete="handleLoginRequest(xhr, status, args)" update="growl" />
+                    </f:facet>
+                </h:panelGrid>
+            </p:dialog>
+
 
         </h:form>
 
