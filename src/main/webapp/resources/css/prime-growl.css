@@ -1,0 +1,10 @@
+/* Growl */
+.ui-growl {
+    width: 500px !important;
+    /*right: 1.5% !important;*/
+    /*top: 28% !important;*/
+}
+
+.ui-growl-message {
+    width: 400px !important;
+}

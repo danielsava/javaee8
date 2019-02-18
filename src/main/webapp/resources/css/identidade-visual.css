@@ -1,0 +1,82 @@
+
+/* Perfil - Identidade Visual */
+
+/* Menu Superior */
+.layout-wrapper .topbar {
+    background-color: #676A6F; /* #22BAA0(verde-colare); #f5830a(laranja-perfil); #E48015(laranja-perfil-2); #F78C0F (laranja-perfil-3) */
+}
+
+.layout-wrapper .topbar .topbar-left {
+    background-color: #F78C0F; /* #34425A(azul-colare); #676A6F (cinza-perfil) */
+}
+
+.layout-wrapper .topbar .topbar-right #menu-button {
+    background-color: rgba(103, 106, 111, 0.45);
+}
+
+body .ui-panel .ui-panel-titlebar {
+    border-bottom: 1px solid #676A6F;
+}
+
+body .ui-state-active, body .ui-state-highlight {
+    background-color: #84878C;
+}
+
+body .ui-widget-header {
+    background-color: #676A6F;
+    border: 1px solid #676A6F;
+}
+
+/* Input */
+body .ui-inputfield.ui-state-focus {
+    border-color: #84878C;
+}
+
+body .ui-state-error, body .ui-widget.ui-state-error, body .ui-widget-content .ui-state-error, body .ui-widget-header .ui-state-error {
+    border-color: #e62a10 !important;
+}
+
+body .ui-inputfield.ui-state-error {
+    border-color: #e62a10 !important;
+}
+
+/* CheckBox */
+body .ui-chkbox .ui-chkbox-box.ui-state-active {
+    border-color: #676a6f;
+    background-color: #676a6f;
+}
+
+/* RadioButton */
+body .ui-radiobutton .ui-radiobutton-box .ui-icon-bullet {
+    background-color: #676A6F;
+}
+
+body .ui-radiobutton .ui-radiobutton-box.ui-state-active {
+    border-color: #676A6F;
+}
+
+/* DatePicker */
+body .ui-datepicker .ui-datepicker-header {
+    padding: 10px 16px;
+    font-size: 16px;
+    background: #686a70;
+    border-color: #686a70;
+}
+
+/* PickList - Botões */
+.ui-picklist-buttons-cell .ui-button {
+    background-color: #84878C;
+}
+
+.ui-picklist-buttons-cell .ui-button.ui-state-hover {
+    background-color: #676A6F;
+}
+
+/* Botões */
+.botao-padrao {
+    background-color: #84878C !important;
+}
+
+.botao-padrao:hover {
+    background-color: #676A6F !important;
+}

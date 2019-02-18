@@ -1,0 +1,4 @@
+/* PickList - Bug Alinhamento */
+.ui-picklist.ui-picklist-responsive .ui-picklist-list-wrapper {
+    width: auto !important ;
+}

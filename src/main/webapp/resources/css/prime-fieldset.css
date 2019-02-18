@@ -1,0 +1,19 @@
+/* Fieldset - Button Toggle */
+body.layout-compact .ui-fieldset .ui-fieldset-legend .ui-fieldset-toggler {
+    padding: 8px;
+    margin-top: -8px;
+    margin-right: 8px;
+    margin-left: 2px;
+}
+
+body .ui-fieldset .ui-fieldset-legend .ui-fieldset-toggler {
+    padding: 12px;
+    background-color: rgba(205, 207, 210, 0.31);
+    color: #69707b;
+    font-size: 15px;
+}
+
+body .ui-fieldset .ui-fieldset-legend .ui-fieldset-toggler:hover {
+    background-color: rgb(161, 166, 175);
+    color: #ffffff;
+}

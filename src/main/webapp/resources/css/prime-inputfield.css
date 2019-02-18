@@ -1,0 +1,6 @@
+/* PrimeFaces InputText - Tamanho e Cor da Fonte no Formulário */
+.ui-inputfield {
+    color: #464646;
+    font-size: 15px !important; /* 15 */
+    letter-spacingg: 1px;
+}

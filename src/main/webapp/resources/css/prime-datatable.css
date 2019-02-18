@@ -1,0 +1,83 @@
+/* PrimeFaces Tabela */
+
+
+/* Alinhamento do Texto da Coluna  */
+body.layout-compact .ui-datatable thead th {
+    text-alignn: left !important;
+}
+
+/* Cor da Coluna Destacada */
+body .ui-datatable thead th.ui-state-active, body .ui-datatable thead th.ui-state-highlight {
+    background-color: #828181;
+}
+
+/* Cor da Linha Selecionada */
+.ui-datatable .ui-state-highlight {
+    background: #989B9E !important;  /* Cor da Linha  - backup: #aaaaab */
+    color: #ffffff !important;       /* Cor do Texto da Linha */
+}
+
+.ui-datatable table tbody tr td {
+    /* color: #546e7a;  cor das letras das linhas */
+    border: solid 1px #FFFFFF !important;
+}
+
+.ui-datatable thead tr th {
+    /* color: #546e7a;  cor das letras das linhas */
+    border: solid 1px #FFFFFF !important;
+}
+
+.ui-datatable tfoot td {
+    border: 1px solid #ffffff !important;
+}
+
+.subTabela .ui-widget-header {
+    background-color: #ffffff !important;
+    border: 1px solid #dedede !important;
+    border-top: 0px solid #dedede !important;
+    border-bottom: 1.5px solid #afafaf !important;
+    color: black;
+    text-align: left;
+    padding-left: 25px !important;
+}
+
+.ui-datatable .ui-datatable-data .vermelho {
+    color: #C62828;
+}
+
+.ui-datatable {
+    border: solid 1px #FFFFFF !important;
+}
+
+/* Alinhamento do texto para Tabela em modo responsivo */
+@media (max-width: 640px) {
+    .ui-datatable-reflow .ui-datatable-data td[role="gridcell"] {
+        text-align: left !important;
+    }
+    .coluna-acao {
+        text-align: right;
+    }
+    .coluna-center {
+        text-align: left;
+    }
+}
+
+.coluna-center {
+    text-align: center;
+}
+
+.coluna-acao {
+    text-align: center;
+}
+
+
+/* Opções de Cores para Linha da Tabela */
+.tabela-linha-vermelha {
+    background: #ff7f7f !important;  /* Cor da Linha */
+    color: #ffffff !important;       /* Cor do Texto da Linha */
+}
+
+.tabela-linha-verde {
+    background: #7abd97 !important;  /* Cor da Linha */
+    color: #ffffff !important;       /* Cor do Texto da Linha */
+}
