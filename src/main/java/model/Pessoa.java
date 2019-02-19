@@ -20,7 +20,7 @@ import java.util.Objects;
 */
 
 @Entity
-public class Teste implements Serializable {
+public class Pessoa implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -39,8 +39,8 @@ public class Teste implements Serializable {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        Teste teste = (Teste) o;
-        return Objects.equals(id, teste.id);
+        Pessoa pessoa = (Pessoa) o;
+        return Objects.equals(id, pessoa.id);
     }
 
     @Override

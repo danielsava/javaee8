@@ -1,7 +1,7 @@
 package servico;
 
-import model.Teste;
-import repositorio.TesteDao;
+import model.Pessoa;
+import repositorio.PessoaDao;
 
 import javax.enterprise.context.ApplicationScoped;
 import javax.inject.Inject;
@@ -13,11 +13,15 @@ public class TesteServ implements Serializable {
 
 
     @Inject
-    private TesteDao testeDao;
+    private PessoaDao pessoaDao;
 
     @Transactional
-    public void salvar(Teste teste) {
-        testeDao.salvar(teste);
+    public void salvar(Pessoa pessoa) {
+        pessoaDao.salvar(pessoa);
+    }
+
+    public Pessoa consultarPorId(Long id) {
+        return pessoaDao.consultarPorId(id);
     }
 
 }

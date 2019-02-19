@@ -3,7 +3,7 @@ package servlet;
 import cdi.ApplicationBean;
 import cdi.RequestBean;
 import cdi.SessionBean;
-import model.Teste;
+import model.Pessoa;
 import servico.TesteServ;
 
 import javax.inject.Inject;
@@ -37,16 +37,40 @@ public class CaveraRootsServlet extends HttpServlet {
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
 
+        Pessoa juvenas = testeServ.consultarPorId(1L);
+        juvenas.setNome("Juvenas Juvenal Juvencio");
+        testeServ.salvar(juvenas);
+
+        /*
+        Pessoa juvenas = new Pessoa();
+
+        juvenas.setNome("Juvenas");
+        juvenas.setIdade(36);
+        juvenas.setDataNascimento(LocalDate.of(1981, 10, 11));
+        juvenas.setDataCriacao(LocalDateTime.now());
+
+        testeServ.salvar(juvenas);
 
 
-        Teste teste = new Teste();
+        Pessoa asdrubal = new Pessoa();
 
-        teste.setNome("Daniel");
-        teste.setIdade(36);
-        teste.setDataNascimento(LocalDate.of(1981, 10, 11));
-        teste.setDataCriacao(LocalDateTime.now());
+        asdrubal.setNome("Asdrubal");
+        asdrubal.setIdade(17);
+        asdrubal.setDataNascimento(LocalDate.of(2002, 1, 1));
+        asdrubal.setDataCriacao(LocalDateTime.now());
 
-        testeServ.salvar(teste);
+        testeServ.salvar(asdrubal);
+
+
+        Pessoa tiburcio = new Pessoa();
+
+        tiburcio.setNome("Tiburcio");
+        tiburcio.setIdade(26);
+        tiburcio.setDataNascimento(LocalDate.of(1991, 1, 1));
+        tiburcio.setDataCriacao(LocalDateTime.now());
+
+        testeServ.salvar(tiburcio);
+        */
 
 
 
