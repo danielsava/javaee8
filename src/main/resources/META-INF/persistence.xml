@@ -20,10 +20,8 @@
 			<property name="hibernate.format_sql" value="true"/>
 			<property name="hibernate.generate_statistics" value="false"/>
 
-
             <!--
             <property name="javax.persistence.sql-load-script-source" value="init_db.sql"/> -->
-
 
 		</properties>
 
