@@ -30,7 +30,7 @@ public class PessoaDao implements Serializable {
 
 
     public void remover(Pessoa pessoa) {
-        em.remove(pessoa);
+        em.remove(em.merge(pessoa));
     }
 
     public Pessoa consultarPorId(Long id) {
