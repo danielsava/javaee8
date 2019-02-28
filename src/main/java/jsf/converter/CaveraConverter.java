@@ -8,6 +8,12 @@ import javax.faces.convert.Converter;
 import javax.faces.convert.ConverterException;
 import javax.faces.convert.FacesConverter;
 
+/**
+ *   No Java EE 8, os convertes JSF são beans do CDI.
+ *   Para isso, basta setar para 'true' o atributo 'managed'
+ *
+ */
+
 @FacesConverter(value = "fooConverter", managed = true)
 public class CaveraConverter implements Converter<CaveraBean> {
 

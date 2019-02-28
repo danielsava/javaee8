@@ -15,6 +15,8 @@ public class ApplicationBean implements Serializable {
         contador++;
     }
 
+
+
     @PostConstruct
     private void init() {
         System.out.println(ApplicationBean.class.getSimpleName() + " : Construído");
