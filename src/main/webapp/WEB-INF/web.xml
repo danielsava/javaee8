@@ -44,4 +44,20 @@
         <welcome-file>index.xhtml</welcome-file>
     </welcome-file-list>
 
+    <!-- Seguranca : Aautenticacao e Autorizacao por usuario
+    <security-constraint>
+        <web-resource-collection>
+            <web-resource-name>ws-security</web-resource-name>
+            <url-pattern>/*</url-pattern>
+        </web-resource-collection>
+        <auth-constraint>
+            <role-name>**</role-name>
+        </auth-constraint>
+    </security-constraint>
+    <login-config>
+        <auth-method>BASIC</auth-method>
+    </login-config>
+    -->
+
+
 </web-app>

@@ -1,4 +1,4 @@
-package jsf.validator;
+package web.jsf.validator;
 
 import bean.CaveraBean;
 

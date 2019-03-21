@@ -6,7 +6,7 @@
 
 	<persistence-unit name="javaee8-mysql" transaction-type="JTA">
 
-		<jta-data-source>java:jboss/datasources/javaee8-mysql</jta-data-source>
+		<jta-data-source>java:jboss/datasources/ExampleDS</jta-data-source> <!-- java:jboss/datasources/javaee8-mysql -->
 
 		<exclude-unlisted-classes>false</exclude-unlisted-classes>
 

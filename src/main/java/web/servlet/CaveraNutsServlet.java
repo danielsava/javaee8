@@ -1,4 +1,4 @@
-package servlet;
+package web.servlet;
 
 import cdi.ApplicationBean;
 import cdi.RequestBean;

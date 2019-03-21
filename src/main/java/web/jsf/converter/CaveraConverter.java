@@ -1,4 +1,4 @@
-package jsf.converter;
+package web.jsf.converter;
 
 import bean.CaveraBean;
 

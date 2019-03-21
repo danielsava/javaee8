@@ -1,4 +1,4 @@
-package jsf.locale;
+package web.jsf.locale;
 
 import javax.enterprise.context.SessionScoped;
 import javax.enterprise.inject.Produces;
