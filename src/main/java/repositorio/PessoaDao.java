@@ -82,7 +82,7 @@ public class PessoaDao implements Serializable {
      *
      *   SELECT a, b FROM Author a JOIN a.books b
      *
-     *   SELECT b, p FROM Book b, Publisher p WHERE b.fk_publisher = p.id
+     *   SELECT b, p FROM BookLob b, Publisher p WHERE b.fk_publisher = p.id
      *
      *
      *  -- Left Outer Joins
