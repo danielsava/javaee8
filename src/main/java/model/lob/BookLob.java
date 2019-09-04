@@ -10,6 +10,8 @@ import java.io.Serializable;
  *  - String : Conteúdo texto muito 'muito' extensos
  *
  *
+ *  *** ESTE É UM MAPEAMENTO ESPECIFICADO PELA JPA ***
+ *
  * Essa é a forma mais simples, mais natural ao Java mas menos performática.
  *
  * fonte: https://www.youtube.com/watch?v=uZXfZZ59cjU (Thoughts On Java)

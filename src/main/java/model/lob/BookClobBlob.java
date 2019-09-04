@@ -8,8 +8,10 @@ import java.sql.Clob;
 /**
  * Exemplo de utilização de LOB utilizando os BLOB (byte[]) e CLOB (String).
  *
- * Esses atributos permitem o JDBC driver utilizar otimizaçoes específicas para LOB que podem melhorar a performance
- * da aplicação.
+ * *** ESTE É UM MAPEAMENTO ESPECIFICADO E IMPLEMENTADO SOMENTE PELO HIBERNATE ***
+ *
+ * Esses atributos permitem o JDBC driver utilizar otimizaçoes específicas para LOB que melhoram a performance
+ * da aplicação, como por exemplo o uso de STREAM por parte do driver JDBC.
  *
  * Quais otimizações serão utilizadas, vai depender do drive JDBC e da Base de Dados.
  *
